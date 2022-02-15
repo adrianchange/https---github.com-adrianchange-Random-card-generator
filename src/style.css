@@ -1,1 +1,83 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: green;
+  box-sizing: border-box;
+}
+.card {
+  display: flex;
+  background-color: white;
+  margin: auto;
+  height: 400px;
+  width: 250px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+}
+.text.spade::before,
+.text.spade::after {
+  content: "\2660";
+  font-size: 80px;
+}
+.text.spade::before {
+  position: absolute;
+  bottom: -210px;
+  left: 210px;
+}
+.text.spade::after {
+  position: absolute;
+  top: -100px;
+  right: 100px;
+}
+.text.club::before,
+.text.club::after {
+  content: "\2663";
+  font-size: 80px;
+}
+.text.club::before {
+  position: absolute;
+  bottom: -210px;
+  left: 210px;
+}
+.text.club::after {
+  position: absolute;
+  top: -100px;
+  right: 100px;
+}
+.text.heart::before,
+.text.heart::after {
+  content: "\2665";
+  color: red;
+  font-size: 80px;
+}
+.text.heart::before {
+  position: absolute;
+  bottom: -210px;
+  left: 210px;
+}
+.text.heart::after {
+  position: absolute;
+  top: -100px;
+  right: 100px;
+}
+.text.diamonds::before,
+.text.diamonds::after {
+  content: "\2666";
+  color: red;
+  font-size: 80px;
+}
+.text.diamonds::before {
+  position: absolute;
+  bottom: -210px;
+  left: 210px;
+}
+.text.diamonds::after {
+  position: absolute;
+  top: -100px;
+  right: 100px;
+}
+.text {
+  font-size: 60px;
+  position: absolute;
+  padding-left: 100px;
+  padding-top: 80px;
+}
